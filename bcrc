@@ -191,3 +191,32 @@ define abs(x) {
 define bessel(n, x) {
     return j(n,x);
 }
+
+define a(m, n) {
+    if (n < 0) {
+        return 0;
+    }
+
+    v = 1;
+    for (i = 0; i < n; i++) {
+        v *= (m - i);
+    }
+    return v;
+}
+
+define fac(n) {
+    return a(n, n);
+}
+
+define c(m, n) {
+	auto v
+
+    if (n < 0) {
+        return 0;
+    }
+
+	scale = 0;
+	v = a(m, n) / a(n, n);
+	scale = 6;
+    return v;
+}
