@@ -38,4 +38,7 @@ pow(a, b)        # a ^ b
 sqrt(x)          # x ^ 1/2
 cbrt(x)          # x ^ 1/3
 abs(x)           # absolute value of x
+fac(n)           # factorial of n
+c(n, k)          # n choose k, unordered
+a(n, k)          # n choose k, ordered
 ```
