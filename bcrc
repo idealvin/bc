@@ -209,14 +209,14 @@ define fac(n) {
 }
 
 define c(m, n) {
-	auto v
+    auto v
 
     if (n < 0) {
         return 0;
     }
 
-	scale = 0;
-	v = a(m, n) / a(n, n);
-	scale = 6;
+    scale = 0;
+    v = a(m, n) / a(n, n);
+    scale = 6;
     return v;
 }
