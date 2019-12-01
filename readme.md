@@ -5,8 +5,8 @@
 Put `bcrc` somewhere such as ~/.bcrc, then start bc as follows:
 ```sh
 # you may add an alias to your bashrc file:
-#   alias bc='bc -q -l <(cat ~/.bcrc)'
-bc -l <(cat ~/.bcrc)  
+#   alias bc='bc ~/.bcrc -l -q'
+bc ~/.bcrc -l
 ```
 
 ## supported functions
