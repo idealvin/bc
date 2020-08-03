@@ -220,3 +220,11 @@ define c(m, n) {
     scale = 6;
     return v;
 }
+
+define rad(deg) {
+    return deg/180*pi;
+}
+
+define deg(rad) {
+    return rad/pi*180;
+}
