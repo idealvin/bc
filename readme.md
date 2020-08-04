@@ -41,4 +41,6 @@ abs(x)           # absolute value of x
 fac(n)           # factorial of n
 c(n, k)          # n choose k, unordered
 a(n, k)          # n choose k, ordered
+deg(rad)         # Radians to degrees
+rad(deg)         # Degrees to radians
 ```
