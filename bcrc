@@ -1,6 +1,6 @@
-pi=3.1415926535897932;
-e=2.7182818284590452;
-scale=6;
+# scale=6;
+pi=4*a(1);
+e=e(1);
 
 define sin(x) {
     if (x == pi/2) {
@@ -54,7 +54,7 @@ define asin(x) {
     if (x == 1) {
         return pi/2;
     }
-    
+
     if (x == -1) {
         return -pi/2;
     }
@@ -70,19 +70,19 @@ define acos(x) {
     if (x == 0) {
         return pi/2;
     }
-    
+
     if (x == 1) {
         return 0;
     }
-    
+
     if (x == -1) {
         return pi/1;
     }
-    
+
     if (x > 0) {
         return a(sqrt(1-x^2)/x);
     }
-    
+
     return pi/1 - acos(-x);
 }
 
@@ -94,11 +94,11 @@ define atan(x) {
     if (x == 1) {
         return pi/4;
     }
-    
+
     if (x == -1) {
         return -pi/4;
     }
-    
+
     return a(x);
 }
 
@@ -118,7 +118,7 @@ define asec(x) {
     if (x >= 1) {
         return a(sqrt(x^2-1));
     }
-    
+
     return pi/1 - a(sqrt(x^2-1));
 }
 
@@ -130,7 +130,7 @@ define acsc(x) {
     if (x == 1) {
         return pi/2;
     }
-    
+
     if (x == -1) {
         return -pi/2;
     }
@@ -215,9 +215,10 @@ define c(m, n) {
         return 0;
     }
 
+    s = scale;
     scale = 0;
     v = a(m, n) / a(n, n);
-    scale = 6;
+    scale = s;
     return v;
 }
 
