@@ -215,9 +215,10 @@ define c(m, n) {
         return 0;
     }
 
+    s = scale;
     scale = 0;
     v = a(m, n) / a(n, n);
-    scale = 6;
+    scale = s;
     return v;
 }
 
